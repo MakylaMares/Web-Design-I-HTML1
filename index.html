@@ -1,29 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.flex-container {display: flex;flex-direction: column; background-color: blueviolet;}
-.flex-container {display: flex; flex-direction: row; background-color: blueviolet;}
-.flex-container > div {background-color: #f1f1f1; width: 100px; margin: 10px; text-align: center; line-height: 75px; font-size: 30px;}
-.flex-container > div {background-color: #f1f1f1; width: 100px; margin: 10px; text-align: center; line-height: 75px; font-size: 30px;}
-@media (max-width: 1019px){.container{width:90%;}}
-</style>
-</head>
-<body>
-    <nav>Nav bar goes here. Might I <a href="https://www.w3schools.com/css/css_navbar_horizontal.asp">suggest this</a>?</nav>
-<h1>Flexbox</h1>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      header {background-color: purple; 
+        text-align: center; 
+        color: white; 
+        padding: 15px;
+      }
+
+      nav {background-color: purple; 
+        color: white; 
+        padding: 15px; 
+        text-align: center;
+      }
+
+      body {background-color: black;}
+      body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: purple;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(234, 169, 253);
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #ffffff;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: purple;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid white;
+  border-radius: 5px;
+}
+#feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #ee40fe; }
+  #selectable .ui-selected { background: #ee40fe; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; text-align: center; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; text-align: center; }
+  footer {
+  text-align: center;
+  padding: 15px;
+  background-color: purple;
+  color: white;
+}
+@media (max-width: 1019px){
+.container{width:90%;}}
+
+.makeMeStack{flex: 100%;
+}
+      </style>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script>
+      $( function() {
+        $( "#selectable" ).selectable();
+      } );
+      </script>
+      <body>
+        <div class="icon-bar">
+          <a class="active" href="#"><i class="fa fa-home"></i></a> 
+          <a href="#"><i class="fa fa-search"></i></a> 
+          <a href="#"><i class="fa fa-envelope"></i></a> 
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="#"><i class="fa fa-trash"></i></a> 
+        </div>
+        <p>Rounded</p>
+        <hr class="rounded">
+        <header>Flexbox Practice</header>
+        <p>Rounded</p>
+        <hr class="rounded">
+        <nav>Nav bar goes here. Might I<a href="https//www.w3schools.com/css/css_navbar_horizon.asp"> suggest this</a>?</nav>
+<hr class="rounded">
 <div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
+  <div style="flex-grow: 10">1</div>
+  <div style="flex-grow: 10">2</div>
+  <div style="flex-grow: 10">3</div>  
 </div>
+<p>Rounded</p>
+<hr class="rounded">
+<ol id="selectable">
+  <li class="ui-widget-content">Item 1</li>
+  <li class="ui-widget-content">Item 2</li>
+  <li class="ui-widget-content">Item 3</li>
+  <li class="ui-widget-content">Item 4</li>
+  <li class="ui-widget-content">Item 5</li>
+  <li class="ui-widget-content">Item 6</li>
+  <li class="ui-widget-content">Item 7</li>
+</ol>
+<p>Rounded</p>
+<hr class="rounded">
 <div class="flex-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+  <div class="makeMeStack">1</div>
+  <div class="makeMeStack">2</div>
+  <div class="makeMeStack">3</div>
 </div>
-<footer>Copyrigth Makyla Mares 2024</footer>
-</body>
+<p>Rounded</p>
+<hr class="rounded">
+<footer>
+  <p>Copyright 2024 Makyla Mares</p>
+</footer>
+      </body>
+  </head>
 </html>
-
-

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Antonio Graphic Designer</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      header {background-color: purple; 
+        text-align: center; 
+        color: white; 
+        padding: 15px;
+      }
+
+      nav {background-color: purple; 
+        color: white; 
+        padding: 15px; 
+        text-align: center;
+      }
+
+      body {background-color: black;}
+      body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: purple;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(234, 169, 253);
+  font-size: 25px;
+}
+
+.icon-bar a:hover {
+  background-color: #ffffff;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.flex-container-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: black;
+}
+
+.flex-container-center > div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  color:#ffffff;
+}
+
+.flex-container-left {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: black;
+}
+
+.flex-container-left > div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+
+/* Rounded border */
+hr.rounded {
+  border-top: 25px solid purple;
+  border-radius: 25px;
+}
+#feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #ee40fe; }
+  #selectable .ui-selected { background: #ee40fe; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; text-align: center; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; text-align: center; }
+  footer {
+  text-align: center;
+  padding: 15px;
+  background-color: purple;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1019px){
+.container{width:90%;}}
+
+.makeMeStack{flex: 100%;
+}
+      </style>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script>
+      $( function() {
+        $( "#selectable" ).selectable();
+      } );
+      </script>
+      <body>
+        <div class="icon-bar">
+          <a class="active" href="index.html">Home</a> 
+          <a href="portfolio.html">Portfolio</a> 
+          <a href="contact.html">Contact</a> 
+          <a href="services.html">Services</a>
+        </div>
+        <p>Rounded</p>
+        <hr class="rounded">
+
+      </body>
+  </head>
+</html>

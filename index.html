@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flexbox Practice</title>
+    <title>San Antonio Graphic Designer</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,40 +32,61 @@
 
 .icon-bar a {
   float: left;
-  width: 20%;
+  width: 25%;
   text-align: center;
   padding: 12px 0;
   transition: all 0.3s ease;
   color: rgb(234, 169, 253);
-  font-size: 36px;
+  font-size: 25px;
 }
 
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: #ffffff;
 }
 
 .active {
   background-color: #ffffff;
 }
-.flex-container {
+
+.flex-container-center {
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
-  background-color: purple;
+  background-color: black;
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
+.flex-container-center > div {
+  background-color: black;
   width: 100px;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  line-height: 50px;
+  font-size: 35px;
+  color:#ffffff;
 }
+
+.flex-container-left {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: black;
+}
+
+.flex-container-left > div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+
 /* Rounded border */
 hr.rounded {
-  border-top: 8px solid white;
-  border-radius: 5px;
+  border-top: 25px solid purple;
+  border-radius: 25px;
 }
 #feedback { font-size: 1.4em; }
   #selectable .ui-selecting { background: #ee40fe; }
@@ -76,7 +97,7 @@ hr.rounded {
   text-align: center;
   padding: 15px;
   background-color: purple;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 @media (max-width: 1019px){
 .container{width:90%;}}
@@ -94,44 +115,26 @@ hr.rounded {
       </script>
       <body>
         <div class="icon-bar">
-          <a class="active" href="#"><i class="fa fa-home"></i></a> 
-          <a href="#"><i class="fa fa-search"></i></a> 
-          <a href="#"><i class="fa fa-envelope"></i></a> 
-          <a href="#"><i class="fa fa-globe"></i></a>
-          <a href="#"><i class="fa fa-trash"></i></a> 
+          <a class="active" href="#">Home</a> 
+          <a href="portfolio.html">Portfolio</a> 
+          <a href="contact.html">Contact</a> 
+          <a href="services.html">Services</a>
         </div>
         <p>Rounded</p>
         <hr class="rounded">
-        <header>Flexbox Practice</header>
-        <p>Rounded</p>
-        <hr class="rounded">
-        <nav>Nav bar goes here. Might I<a href="https//www.w3schools.com/css/css_navbar_horizon.asp"> suggest this</a>?</nav>
-<hr class="rounded">
-<div class="flex-container">
-  <div style="flex-grow: 10">1</div>
-  <div style="flex-grow: 10">2</div>
-  <div style="flex-grow: 10">3</div>  
+<div class="flex-container-center">
+  <div style="flex-grow: 10"><img src="images/Mylogo.jpg"><br><br><br>"Anything you dream, I can create" <br>-Makyla Mares</div>
+  <div style="flex-grow: 10"><img src="images/Neon.jpg"></div>  
 </div>
 <p>Rounded</p>
 <hr class="rounded">
-<ol id="selectable">
-  <li class="ui-widget-content">Item 1</li>
-  <li class="ui-widget-content">Item 2</li>
-  <li class="ui-widget-content">Item 3</li>
-  <li class="ui-widget-content">Item 4</li>
-  <li class="ui-widget-content">Item 5</li>
-  <li class="ui-widget-content">Item 6</li>
-  <li class="ui-widget-content">Item 7</li>
-</ol>
-<p>Rounded</p>
-<hr class="rounded">
-<div class="flex-container">
-  <div class="makeMeStack">1</div>
-  <div class="makeMeStack">2</div>
-  <div class="makeMeStack">3</div>
+<div class="flex-container-left">
+  <div style="flex-grow: 0.95">About Me<br><br>As a student from Graphic Design, I am committed
+    to creating beautiful, functional designs that will help my clients grow their vusinesses. I love working with small businesses and seeing their brand come to life through throughtfully crafted materials. Form logos and business cards to social media posts and flyers, I can help your business appear more professional and catch your target audience’s attention. With my expertise and knowledge, I am confident that I can help your small business achieve its goals.</div> 
+    <div style="flex-grow: 0.95">1</div>
 </div>
 <p>Rounded</p>
-<hr class="rounded">
+</div>
 <footer>
   <p>Copyright 2024 Makyla Mares</p>
 </footer>

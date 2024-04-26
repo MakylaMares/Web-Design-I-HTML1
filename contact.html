@@ -65,6 +65,26 @@
   color: #ffffff;
 }
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: black;
+}
+
+.flex-container > div {
+  background-color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 20px;
+  color: black;
+}
+form {
+  color: #ffffff;
+}
+
 
 /* Rounded border */
 hr.rounded {
@@ -104,10 +124,22 @@ hr.rounded {
           <a href="services.html">Services</a>
         </div>
         <div class="flex-container-left">
-            <div style="flex-grow: 10;">If you have any questions or would like to talk to mego ahead and give me a call. You can also fill out this form so I could always either email you or give you a call right back to you.<br><br>Phone #: (210) 326-9879<br>Email: makylam03@gmail.com</div>
+            <div style="flex-grow: 10;">If you have any questions or would like to talk to me. Go ahead and give me a call. You can also fill out this form so I could always either email you or give you a call right back to you.<br><br>Phone #: (210) 326-9879<br>Email: makylam03@gmail.com</div>
         </div>
         <p>Rounded</p>
         <hr class="rounded">
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="comments">Comments:</label><br>
+          <input type="text" id="comments" name="comments"></input><br><br>
+          <input type="submit" value="Submit">
+        </form> 
+        <footer>
+          <p>Copyright 2024 Makyla Mares</p>
+        </footer>
       </body>
   </head>
 </html>
